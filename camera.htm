@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/bridge.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/typography.css" />
+    <script src="http://simplewebrtc.com/latest.js"></script> 
+    <!--<script type="text/javascript" src="swrtc.js"></script> -->
+</head>
+<body class="theme-dark">
+    <div id="vidcontainer">
+        <div id="remotes">
+        <video id="local"></video>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var webrtc = new SimpleWebRTC({
+            localVideoEl: 'local',
+            remoteVideosEl: 'remotes',
+            autoRequestMedia: true
+        });
+        webrtc.on('readyToCall', function(){
+            webrtc.joinRoom('terraform-bridge');
+        });
+    </script>
+</body>
+</html>

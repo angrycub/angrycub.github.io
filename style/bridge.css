@@ -1,0 +1,91 @@
+/* Layout */
+.content-spacing { min-height: 100%; position:relative; }
+* html .content-spacing { height: 100%; } /* IE Fix */
+html,body { height: 100%; font-size: 18pt; }
+.container {
+    margin: auto;
+    width: 24em;
+
+    /*border: 1px solid rgb(180, 180, 180);*/
+    /*background-color: rgb(70, 70, 70);*/
+    padding: 2.6em 0.6em 7em 0.6em;
+}
+
+/* text styling */
+p {
+}
+h1 {
+    margin-bottom: 0;
+    margin-left: -0.07em;
+    font: 6.2em "SourceSansProLight";
+    text-transform: uppercase;
+}
+h2 {
+    font: 1.3em "SourceSansProLight";
+    text-transform: uppercase;
+    margin: -0.4em 0 1.2em 0;
+}
+.accent {
+    color: rgb(77, 164, 219);
+}
+.conatiner > a:visited,
+.container > a {
+    color: inherit;
+}
+
+
+/* Footer */
+#header {
+    /*position: relative;
+    margin: -2.0em auto 0 auto;
+    border-top: 1px solid rgb(218, 218, 218);*/
+
+    border-bottom: 1px solid rgb(218, 218, 218);
+    background-color: rgb(70, 70, 70);
+    text-align: center;
+}
+#header > div {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    margin: 0 0.6em;
+}
+#header > div .logotype {
+    font-size: 20pt;
+}
+
+/* Logo */
+.logotype {
+    margin: 0.14em 0 0 0.3em;
+    padding: 0;
+    font-family: Pirulen;
+    font-size: 20pt;
+}
+
+
+.control {
+    display: inline-block;
+    font-size: 0.6em;
+}
+
+
+
+#vidcontainer {
+    text-align: center;
+    width: 94%;
+}
+
+video {
+    display: inline-block;
+    max-width: 49%;
+    height: 16rem;
+    border: 1px dashed rgb(154, 154, 154);
+}
+
+#remotes {
+    position: absolute;
+    top: 2rem;
+    left: 3%;
+    width: 94%;
+    height: 98%;
+}
